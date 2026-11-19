@@ -1,3 +1,16 @@
 spring:
   application:
     name: parking
+  mvc:
+    problemdetails:
+      enabled: true
+
+parking:
+  capacity: 10
+  tariff:
+    rate-per-minute:
+      SMALL: 0.10
+      MEDIUM: 0.20
+      LARGE: 0.40
+    extra-charge: 1.00
+    extra-charge-interval: 5m
